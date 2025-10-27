@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusive After-School Club</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @font-face {
+            font-family: Gowun Batang;
+            src: url(assets/fonts/GowunBatang-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Rethink Sans;
+            src: url(assets/fonts/RethinkSans-VariableFont_wght.ttf);
+        }
+
+        body {
+            font-family: Gowun Batang;
+        }
+
+        .p2,
+        .a2 {
+            font-family: Rethink Sans;
+        }
+
+        h1,
+        h2,
+        .h2 {
+            font-size: 70px;
+            line-height: 100%;
+        }
+
+
+
+        .p16 {
+            font-size: 16px;
+            line-height: 110%;
+        }
+
+        .p30 {
+            font-size: 30px;
+            line-height: 120%;
+        }
+
+        .btn1, 
+        .btn2 {
+            display: block;
+            width: 105px;
+            line-height: 110%;
+            letter-spacing: -1px;
+            font-size: 18px;
+            font-family: Rethink Sans;
+        }
+
+        .btn1:hover{
+            opacity: 50%;
+        }
+
+        @media (width <=799px) {
+
+            h1,
+            h2,
+            .h2 {
+                font-size: 45px;
+            }
+
+            .p16 {
+                font-size: 15px;
+            }
+
+            .p30 {
+                font-size: 20px;
+            }
+
+
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-[#FCFAF6] ">
+    <div class="HeaderContainer">
+        <div class="HeaderTextSec flex flex-col px-5 pt-20 pb-15 gap-y-12.5">
+            <nav
+                class="absolute px-4 pt-5 pb-6 gap-x-6 left-0 w-full top-4 bg-[#FCFAF6] md:left-17 md:w-7/9 lg:top-0 lg:left-0 lg:w-full">
+                <div class="flex flex-col gap-y-12">
+
+                    <a href="#" id="navToggleBtn" class="md:hidden">Menu</a>
+
+                    <div id="collapse_nav" class=" flex flex-col gap-y-7 hidden md:hidden!">
+                        <a href="#" class="btn2">Home</a>
+                        <a href="#" class="btn2">Details</a>
+                        <a href="#" class="btn2">News</a>
+                        <a href="#" class="btn2">Contact</a>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex ">
+                    <a href="#" class="btn1">Home</a>
+                    <a href="#" class="btn1">Details</a>
+                    <a href="#" class="btn1">News</a>
+                    <a href="#" class="btn1">Contact</a>
+                </div>
+            </nav>
+
+
+
+            <div
+                class=" flex flex-col text-center py-4 px-6  bg-[#F6F0E4] rounded-2xl hover:bg-[#545454] hover:text-[#E4E4E4] md:flex-row md:justify-between">
+                <p class="p2">
+                    Announcement: Spring ASB Election is now live for voting!
+                </p>
+                <a href="#" class="a2 underline text-md">
+                    Survey here
+                </a>
+            </div>
+
+            <div class="HeaderContent flex flex-col text-center justify-center items-center gap-y-12.5">
+                <div class="eyebrow">
+                    <p>Committed to all students in need</p>
+                </div>
+
+                <h1 class=" lg:max-w-5/7 ">
+                    Lincoln High School Speech and Debate Club
+                </h1>
+                <a href="#" class="a2 underline hover:text-black/50">
+                    Join us
+                </a>
+            </div>
+        </div>
+        <div class="Imgcontainer w-full sm:h-120 md:h-160">
+            <img src="assets/images/pic01.png" alt="" class="w-full h-full">
+        </div>
+    </div>
+    <main>
+        <div
+            class="whatWeDoSec flex flex-col gap-y-[85px] pt-[100px] pb-[85px] text-center justify-center items-center">
+            <div class="whatWeDoHeader flex justify-center w-full">
+                <h2 class="w-7/9">
+                    What We Do
+                </h2>
+            </div>
+            <div class="infoCardsCon flex flex-col max-w-[920px] gap-y-5 justify-center items-center sm:px-6 md:px-0">
+                <div class="infoCardHero flex flex-col gap-y-10 py-12.5 sm:w-full md:max-w-8/9">
+                    <h2 class="p2 p16">Club Details:</h2>
+                    <p class="p30">Speech and Debate is where you'll learn to think critically, speak confidently,
+                        and engage in exciting competitions. Here's everything you need to know:</p>
+                </div>
+                <div class="infoCardSecContainer grid md:grid-cols-2 max-w-[920px] gap-5">
+                    <section
+                        class="infoCardSec1 flex flex-col sm:px-4 sm:py-8.5 md:px-16 md:py-12.5 lg:px-20 gap-y-10 justify-between">
+                        <h2 class="p2 p16"> What: </h2>
+                        <p class="p30"> Ready to find your voice? </p>
+                        <p class="p2">This is a safe place to hone your skills with like-minded peers.</p>
+                    </section>
+                    <section
+                        class="infoCardSec2 flex flex-col sm:px-4 sm:py-8.5 md:px-16 md:py-12.5 lg:px-20 gap-y-10 justify-between">
+                        <h2 class="p2 p16"> Who: </h2>
+                        <p class="p30">All Lincoln High students</p>
+                        <p class="p2"> Everyone, in any grade, is welcome to join.</p>
+                    </section>
+                    <section
+                        class="infoCardSec1 flex flex-col sm:px-4 sm:py-8.5 md:px-16 md:py-12.5 lg:px-20 gap-y-10 justify-between">
+                        <h2 class="p2 p16"> When: </h2>
+                        <p class="p30"> Wednesday, 3:30-4:30pm </p>
+                        <p class="p2">You’ll be out in time for the late bus home.</p>
+                    </section>
+                    <section
+                        class="infoCardSec1 flex flex-col sm:px-4 sm:py-8.5 md:px-16 md:py-12.5 lg:px-20 gap-y-10 justify-between">
+                        <h2 class="p2 p16"> Where: </h2>
+                        <p class="p30"> Room 204 </p>
+                        <p class="p2">We meet in Mr. Smith’s room. He’s our teacher sponsor.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="ImgBreaker w-full sm:h-58 sm:px-10 md:px-9 md:h-[605.08px] lg:px-37 ">
+            <img src="assets/images/pic02.png" alt="" class="w-full h-full">
+        </div>
+        <div class="latestNewsSec flex flex-col px-12 py-16 gap-y-[85px] text-center ">
+            <h2>The latest news</h2>
+            <div class="newsCardContainer flex flex-col gap-5 ">
+                <div
+                    class="newsCardHero flex gap-10 py-12.5 justify-center items-center rounded-2xl border border-[#E4E4E4] sm:flex-col sm:px-8 md:flex-row md:px-12.5">
+                    <div class="Imgcontainer rounded-2xl overflow-hidden md:w-1/2 md:aspect-16/16 lg:aspect-auto">
+                        <img src="assets/images/pic03.png" alt="" class="object-cover w-full h-full">
+                    </div>
+                    <div class="infoCardSec2 flex flex-col gap-y-10 justify-between md:w-1/2 md:px-10">
+                        <h2 class="p2 p16 text-[#3D1A0D]">2025 Regional Results </h2>
+                        <p class="p30">Lincoln Takes Home 1st place overall.</p>
+                        <p class="p2 text-[#5B5B5B] p16"> The team took home a stunning win, claiming 3 of the top 5
+                            spots!
+                            Big shout outs to Emily, Steve, Bryan and Lizzie.</p>
+                    </div>
+                </div>
+                <div class="newsCardSecRow flex gap-5 sm:flex-col md:flex-row ">
+                    <div
+                        class="newscard1 flex flex-col py-12.5 gap-y-5 rounded-2xl border border-[#E4E4E4] justify-center items-center sm:px-8 md:px-20 md:w-1/2 ">
+                        <h2 class="p2 p16 text-[#3D1A0D]">Upcoming event</h2>
+                        <p class="p30">6/11 Lunch Hour Pizza</p>
+                        <div class="imgCon flex grow">
+                            <img src="assets/images/pic04.png" alt="">
+                        </div>
+                    </div>
+
+                    <div
+                        class="newscard2 flex flex-col py-12.5 gap-y-5 justify-center items-center rounded-2xl border border-[#E4E4E4] sm:px-8 md:px-20 md:w-1/2">
+                        <h2 class=" p2 p16 text-[#3D1A0D]">Spotlight</h2>
+                        <div class="imgCon rounded-full overflow-hidden">
+                            <img src="assets/images/pic05.png" alt="">
+                        </div>
+                        <div class="copy">
+                            <p class="p30">Johnny S.</p>
+                            <p class="p2 p16 text-[#5B5B5B]">Congrats Johnny on qualifying for Nationals!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="regionalResultSec flex flex-col justify-center items-center gap-25 pt-8 pb-14">
+            <div class="regionalSectionContent flex flex-col gap-y-14 items-start justify-start w-7/9">
+                <h2>2025 Regional Results</h2>
+                <p class="p2 p16 text-[#5B5B5B]">Scoresheets are available for download below.</p>
+                <div class="resultListContainer flex gap-x-15 sm:flex-col md:flex-row">
+                    <div class="resultList1 flex flex-col gap-y-7.5">
+                        <div class="listTitle">
+                            <h2 class="p2 p16 text-[#3D1A0D]">Speech events</h2>
+                        </div>
+                        <div class="listItem1 flex px-5 pb-7.5">
+                            <a href="#" class="p30">
+                                Dramatic Interpretation (DI)
+                            </a>
+                        </div>
+                        <div class="listItem2 flex px-5 pb-7.5">
+                            <a href="#" class="p30">
+                                Duo Interpretation (DUO)
+                            </a>
+                        </div>
+                        <div class="listItem3 flex px-5 pb-7.5 flex-col gap-y-7.5">
+                            <a href="#" class="p30 hidden">
+                                Humorous Interpretation (HI)
+                            </a>
+                            <p class="p30">
+                                Poetry (POE)
+                            </p>
+                        </div>
+                        <div class="listItem4 flex flex-col px-5 pb-7.5 gap-y-7.5">
+                            <a href="#" class="p30 hidden">
+                                Poetry (POE)
+                            </a>
+                            <a href="#" class="p30  ">
+                                Humorous Interpretation (HI)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resultList2 flex flex-col gap-y-7.5">
+                        <div class="listTitle">
+                            <h2 class="p2 p16 text-[#3D1A0D]">Debate events</h2>
+                        </div>
+                        <div class="listItem1 flex px-5 pb-7.5">
+                            <a href="#" class="p30">
+                                Extemporaneous Debate (XDB)
+                            </a>
+                        </div>
+                        <div class="listItem2 flex px-5 pb-7.5">
+                            <a href="#" class="p30">
+                                Lincoln-Douglas Debate (LD)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="callToActionSection bg-[url('assets/images/pic06.png')] bg-cover bg-center bg-no-repeat p-16">
+            <div class="content bg-black/30 flex flex-col justify-center items-center text-center gap-y-4 p-6">
+                <h2 class="text-white">All voices are welcome here!</h2>
+                <a href="#" class="text-white h2 underline hover:text-white/50">Join us</a>
+            </div>
+        </div>
+    </main>
+    <footer class="flex flex-col gap-[101.17px] bg-[#545454] px-5 py-7.5 ">
+        <div class="socials flex gap-x-3">
+            <a href="" class="fb">
+                <img src="assets/images/fb.png" alt="">
+            </a>
+            <a href="" class="ig">
+                <img src="assets/images/ig.png" alt="">
+            </a>
+            <a href="" class="tiktok">
+                <img src="assets/images/tiktok.png" alt="">
+            </a>
+        </div>
+        <div class="contentContainer flex text-[#FCFAF6] sm:flex-col sm:gap-y-12.5 md:flex-row">
+            <p class="w-1/2 p30">Debate It. Don't Hate It.</p>
+            <div class="contactInfo w-1/2 p30 text-[#FCFAF6]">
+                <p>hello@figma.com</p>
+                <p>1750 Candyland Lane, <br>Portland, OR 97205</p>
+                <p>(646) 555-4567</p>
+            </div>
+        </div>
+        <div class="copyrightContainer">
+            <p class="p2 p16 text-[#E4E4E4]">Lincoln High School © 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const collapsed = document.getElementById('collapse_nav');
+    const navBtn = document.getElementById('navToggleBtn');
+    navBtn.onclick = () => {
+
+        collapsed.classList.toggle('hidden');
+
+        if (collapsed.classList.contains('hidden')) {
+            navBtn.innerHTML = "Menu";
+
+            console.log('collapsed')
+        }
+        else {
+            navBtn.innerHTML = "Close";
+
+            console.log('opened');
+        }
+    }
+
+
+
+</script>
+
+</html>
